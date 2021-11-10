@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="css/style.css" />
+      <link rel="stylesheet" type="text/css" href="css/flickity.css"/>
+      <link rel="stylesheet" href="css/normalize.css">
+      <script src="js/fontAwesome.js"></script>
+      <script src="js/jquery-3.6.0.min.js"></script>
+      <title>Index</title>
+   </head>
+   <body>
+      <div class="container">
+         <header class="header">
+            <div class="header-left">
+               <img class="logo" src="img/logo.png" />
+               <nav>
+                  <ul class="nav-list">
+                     <li class="nav-item">
+                        <a href="#">Hombre</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="#">Mujer</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="#">Blog</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="#">Historia</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="#">Tienda</a>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+            <div class="header-right">
+               <input class="input" placeholder="Buscar..."></input>
+               <button class="button"><i class="fas fa-search"></i></button>
+               <p class="info-envio">Envio gratis para pedidos superiores a $300.000</p>
+               <p class="info-carrito"><i class="fas fa-shopping-cart"></i>Carrito 0</p>
+            </div>
+         </header>
+         <div class="banner"> </div>
+         <section class="section-3"></section>
+         <section class="section-4">
+            <button class="btn-man">Mujer</button>
+         </section>
+         <section class="section-5-video">    
+         </section>
+         <section class="section-6">
+            <button class="btn-white">Accesorios</button>
+         </section>
+         <section class="section-7">
+         </section>
+         <section class="section-8">
+            <button class="btn-white">Hombre</button>
+         </section>
+         <section class="section-9-carousel">
+            <div class="main-carousel">
+               <div class="cell"><img src="img/sl1.png"></div>
+               <div class="cell"><img src="img/sl2.png"></div>
+               <div class="cell"><img src="img/sl3.png"></div>
+               <div class="cell"><img src="img/sl4.png"></div>
+               <div class="cell"><img src="img/sl5.png"></div>
+               <div class="cell"><img src="img/sl6.png"></div>
+               <div class="cell"><img src="img/sl5.png"></div>
+               ...
+            </div>
+         </section>
+         <section class="section-10">
+            <div class="social">
+               <p>@mizapato</p>
+            </div>
+            <div class="social">
+               <i class="fab fa-facebook-f"></i>
+               <i class="fab fa-instagram"></i>
+            </div>
+         </section>
+         <footer class="footer">
+            <div>
+               <h4>Servicio al cliente</h4>
+               <ul class="list-footer">
+                  <li><a href="#">Contactenos</a></li>
+                  <li><a href="#">Cambios y devoluciones</a></li>
+                  <li><a href="#">Politicas de la tienda</a></li>
+                  <li><a href="#">Politicas de datos</a></li>
+               </ul>
+            </div>
+            <div>
+               <h4>Mi Cuenta</h4>
+               <ul  class="list-footer">
+                  <li><a href="#">Mis pedidos</a></li>
+                  <li><a href="#">Mis devoluciones</a></li>
+               </ul>
+            </div>
+            <div>
+               <h4>Recursos</h4>
+               <ul  class="list-footer">
+                  <li><a href="#">Tiendas</a></li>
+                  <li><a href="#">Devoluciones</a></li>
+               </ul>
+            </div>
+            <div>
+               <h4>Newesletter</h4>
+               <ul  class="list-footer">
+                  <li><a href="#">Registrate</a></li>
+                  <li><a href="#">Mis devoluciones</a></li>
+               </ul>
+            </div>
+         </footer>
+      </div>
+      <script src="js/flickity.pkgd.min.js"></script>
+      <script type="text/javascript">
+         $('.main-carousel').flickity({
+         // options
+         cellAlign: 'left',
+         wrapAround:true,
+         freeScroll:true
+         });
+      </script>
+   </body>
+</html>

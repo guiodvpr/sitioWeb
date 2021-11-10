@@ -1,0 +1,259 @@
+:root {
+	--clr-primary: #bca4ac;
+	--clr-primary-hover: #9c747c;
+	--clr-primary-dark: #7b4b5b;
+	--clr-gray100: #f0f7f8;
+	--clr-gray200: #cfd8dc;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Montserrat, sans-serif;
+	background: #ffffff;
+}
+
+a:link,
+a:visited,
+a:active {
+	text-decoration: none;
+}
+
+.container {
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(12, 1fr);
+	grid-template-areas: "header header header header" "banner banner banner banner" "banner banner banner banner" "section-3 section-3 section-4 section-4" "section-3 section-3 section-4 section-4" "section-5 section-5 section-5 section-5" "section-5 section-5 section-5 section-5" "section-6 section-6 section-7 section-7" "section-6 section-6 section-8 section-8" "section-9 section-9 section-9 section-9" "section-10 section-10 section-10 section-10" "footer footer footer footer";
+}
+
+
+
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: white;
+	box-shadow: 0px 0px 10px var(--clr-gray200);
+	grid-area: header;
+}
+
+.banner,
+.section-3,
+.section-4,
+.section-5-video,
+.section-6,
+.section-7,
+.section-8 {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	cursor: pointer;
+}
+
+
+
+
+.banner {
+	background-image: url(../img/banner.jpg);
+	animation: change 30s infinite ease-in-out;
+	grid-area: banner;
+}
+
+@keyframes change {
+	0% {
+		background-image: url(../img/urban.jpg);
+	}
+	20% {
+		background-image: url(../img/bannerMiddle.jpg);
+	}
+	40% {
+		background-image: url(../img/shoesWoman.jpg);
+	}
+	60% {
+		background-image: url(../img/df.png);
+	}
+	80% {
+		background-image: url(../img/urban1.png);
+	}
+	100% {
+		background-image: url(../img/zapatos.png);
+	}
+}
+
+.section-3 {
+	background-image: url(../img/urban1.png);
+	grid-area: section-3;
+}
+
+.section-4 {
+	text-align: center;
+	padding-top: 40%;
+	background-image: url(../img/shoesWoman.jpg);
+	grid-area: section-4;
+}
+
+.section-5-video {
+	background-image: url(../img/bannerDj.png);
+	grid-area: section-5;
+}
+
+.section-6 {
+	text-align: center;
+	padding-top: 50%;
+	background-image: url(../img/dog.png);
+	grid-area: section-6;
+}
+
+.section-7 {
+	background-image: url(../img/plancha.png);
+	grid-area: section-7;
+}
+
+.section-8 {
+	text-align: center;
+	padding-top: 20%;
+	background-image: url(../img/zapatos.png);
+	grid-area: section-8;
+}
+
+.section-9-carousel {
+	display: block;
+	grid-area: section-9;
+}
+
+.section-10 {
+	grid-area: section-10;
+}
+
+.social {
+	padding-top: 35px;
+	text-align: center;
+}
+
+.footer {
+	justify-content: space-between;
+	display: inline-flex;
+	grid-area: footer;
+}
+
+.button {
+	width: 60px;
+	height: 35px;
+	background: #ffffff;
+	border-radius: 0px;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.btn-man {
+	width: 100px;
+	height: 40px;
+	background: #585858;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+.btn-white {
+	width: 100px;
+	height: 40px;
+	background: #ffffff;
+	color: #585858;
+	cursor: pointer;
+}
+
+.header-right {
+	text-align: right;
+	padding: 30px 50px;
+}
+
+input {
+	height: 35px;
+	width: 300px;
+}
+
+.info-envio {
+	color: var(--clr-primary-dark);
+	padding: 10px;
+}
+
+.logo {
+	padding-left: 20px;
+	width: 400px;
+	height: 100px;
+}
+
+.nav-list {
+	padding: 10px 40px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.nav-item {
+	list-style: none;
+	margin-right: 1rem;
+}
+
+.nav-item a {
+	text-decoration: none;
+	color: black;
+	transition: all 100ms ease-in;
+}
+
+.nav-item a:hover {
+	color: var(--clr-primary-dark);
+}
+
+.cell {
+	width: 13%;
+	height: 150px;
+	margin: 0 15px;
+	overflow: hidden;
+	border-radius: 8px;
+}
+
+.cell img {
+	width: 100%;
+	height: 150px;
+	object-fit: cover;
+}
+
+.list-footer {
+	list-style: none;
+}
+
+@media screen and (max-width:1080px) {
+	.container {
+		grid-template-areas: "header header header header" "banner banner banner banner" "banner banner banner banner" "section-4 section-4 section-4 section-4" "section-4 section-4 section-4 section-4" "section-5 section-5 section-5 section-5" "section-5 section-5 section-5 section-5" "section-7 section-7 section-7 section-7" "section-8 section-8 section-8 section-8" "section-9 section-9 section-9 section-9" "footer footer footer footer" "footer footer footer footer";
+	}
+	.logo {
+		width: 300px;
+		height: 100px;
+	}
+	.header-right {
+		display: none;
+	}
+	.section-6 {
+		display: none;
+	}
+	.cell {
+		width: 10%;
+		height: 50px;
+	}
+	.section-10 {
+		display: none;
+	}
+
+
+
+}

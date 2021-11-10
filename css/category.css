@@ -1,0 +1,232 @@
+:root {
+    --clr-primary: #bca4ac;
+    --clr-primary-hover: #9c747c;
+    --clr-primary-dark: #7b4b5b;
+    --clr-gray100: #f0f7f8;
+    --clr-gray200: #cfd8dc;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a:link, a:visited, a:active {
+    text-decoration: none;
+}
+body {
+    font-family: Montserrat, sans-serif;
+    background: #ffffff;
+}
+.container-category{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 0.5fr);
+    grid-template-areas: "header header header header" "w1 card1 card2 card3" "w2 card4 card5 card6" "w2 card7 card8 card9" "section10 section10 section10 section10" "footer footer footer footer" ;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    box-shadow: 0px 0px 10px var(--clr-gray200);
+    grid-area: header;
+}
+.header-right {
+    text-align: right;
+    padding: 30px 50px;
+}
+input {
+    height: 35px;
+    width: 300px;
+}
+.info-envio {
+    color: var(--clr-primary-dark);
+    padding: 10px;
+}
+.card-product{
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius:10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-top: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: .4s;
+}
+.card-product:hover{
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+    transform: translate(0px, -8px);
+    transition: .6s;
+    cursor: pointer;
+}
+.logo {
+    padding-left: 20px;
+    width: 400px;
+    height: 100px;
+}
+.nav-list {
+    padding: 10px 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.nav-item {
+    list-style: none;
+    margin-right: 1rem;
+}
+.nav-item a {
+    text-decoration: none;
+    color: black;
+    transition: all 100ms ease-in;
+}
+.nav-item a:hover {
+    color: var(--clr-primary-dark);
+}
+.n1{
+   grid-area: card1;
+}
+.n2{
+   grid-area: card2;
+}
+.n3{
+   grid-area: card3;
+}
+.n4{
+   grid-area: card4;
+}
+.n5{
+   grid-area: card5;
+}
+.n6{
+   grid-area: card6;
+}
+.n7{
+   grid-area: card7;
+}
+.n8{
+   grid-area: card8;
+}
+.n9{
+   grid-area: card9;
+}
+.widget-1{
+    grid-area: w1;
+}
+.widget-2{
+    grid-area: w2;
+}
+.shoe{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+.card-title{
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    padding-top: 10px;
+}
+.options{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+.option-item{
+    padding: 5px;
+}
+.opt{
+    width: 45px;
+    height: 45px;
+}
+.opt:hover{
+    box-shadow: 0 0 3px rgba(33,33,33,.2);
+    transform: translate(0px, -8px);
+    transition: .6s;
+    cursor: pointer;
+}
+.button {
+    width: 60px;
+    height: 35px;
+    background: #ffffff;
+    border-radius: 0px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.price{
+    color: brown;
+}
+.section-10{
+    grid-area: section10;
+}
+.social {
+    padding-top: 35px;
+    text-align: center;
+}
+.footer{
+    justify-content: space-between;
+    display: inline-flex;
+    grid-area: footer;
+}
+.list-footer {
+    list-style: none;
+}
+
+.talla{
+    padding-top: 5%;
+    background-color: rgb(117, 117, 117);
+    margin-left: 5px;
+    width: 40px;
+    height: 40px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    
+   
+}
+
+.talla:hover{
+    background-color: rgb(172, 169, 169);
+}
+
+@media screen and (max-width:1080px) {
+	.container-category {
+        grid-template-areas: "header header header header" "card1  card1 card2 card2" "card4 card4 card5 card5" "card7 card7 card8 card8" "section10 section10 section10 section10" "footer footer footer footer" ;
+	}
+	.logo {
+		width: 300px;
+		height: 100px;
+	}
+	.header-right {
+		display: none;
+	}
+
+    .n3,
+    .n6,
+    .widget-1,
+    .widget-2,
+    .n9
+    {
+        display: none;
+    }
+
+    
+	
+	.section-10 {
+		display: none;
+	}
+
+
+
+}
+
+
