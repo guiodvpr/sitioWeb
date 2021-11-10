@@ -1,13 +1,19 @@
-# Autecomobility 
-## _Prueba Tecnica Front-end_
+# 
+## _ prototypes based on designs_
 
 
 
 
-
+3-page models were designed: Home, category and product. This last page reads data from a .son file.
 Se diseñaron las maquetas de 3 paginas: home, categoria y producto. Esta ultima pagina lee datos de un archivo .json.
 
+## Features
 
+- The design of the Mockups was followed with precision.
+- CSS Grid was used for the structure of the page (Grid-Template-Areas).
+- It was useful asry to demonstrate that it is responsive design as required.
+- The slider and the carousel was added as bonus.
+- For preserving the simplicity, no Server (Express etc) was not installed, which was used as the local server the extension of "Web Server for Chrome" to be able to do the test of reading the data.
 
 ## Caracteristicas
 
@@ -20,13 +26,11 @@ Se diseñaron las maquetas de 3 paginas: home, categoria y producto. Esta ultima
 
 
 
-## Tecnologias
 
-Se usaron 3 tecnologias
 
-- HTML5
-- CSS
-- JAVASCRIPT
+## Installation
+
+Use a local server so you can do the fetch and read the zapato.json data.
 
 ## Instalación
 
